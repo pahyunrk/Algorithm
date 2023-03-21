@@ -65,5 +65,27 @@
 <li>"1a2b3c4d123Z"안의 자연수는 1, 2, 3, 4, 123 입니다. 따라서 1 + 2 + 3 + 4 + 123 = 133 을 return합니다.</li>
 </ul>
 
+```javascript
+
+function solution(my_string) {
+    var answer = 0;
+    var num;
+    
+    num = my_string.match(/[0-9]+/g);
+    
+    if(num == undefined){
+        answer = 0;
+    }else{
+        for(var i=0; i<num.length; i++){
+            answer += Number(num[i]);
+        }
+    }
+    
+    
+    return answer;
+}
+
+```
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
