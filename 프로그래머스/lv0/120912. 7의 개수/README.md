@@ -62,5 +62,20 @@
 <li>[10, 29]에는 7이 없으므로 0을 return 합니다.</li>
 </ul>
 
+```javascript
+
+function solution(array) {
+    var answer = 0;
+    var st = '';
+    var seven;
+    
+    st = array.join("");
+    
+    seven = st.replace(/[^7]/g,"");
+    
+    return seven.length;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
