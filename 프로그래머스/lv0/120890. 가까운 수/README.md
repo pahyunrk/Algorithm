@@ -67,5 +67,26 @@
 <li>10, 11, 12 중 13과 가장 가까운 수는 12입니다.</li>
 </ul>
 
+```javascript
+
+function solution(array, n) {
+    var answer = 0;
+    var arr = []; 
+    var num;
+    
+    array.sort();
+    
+    for(var i=0; i< array.length; i++){
+        arr.push(Math.abs(array[i]-n));
+    }
+    
+    num = arr.indexOf(Math.min.apply(null,arr));
+    
+    answer = array[num];
+    
+    return answer;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
