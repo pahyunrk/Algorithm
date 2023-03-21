@@ -90,5 +90,30 @@
 <li>입출력 예 #3 에서 "moos", "smm", "som"도 "s", "o", "m", "d" 를 조합해 만들 수 있지만 <code>spell</code>의 원소를 모두 사용해야 하기 때문에 정답이 아닙니다.</li>
 </ul>
 
+```javascript
+function solution(spell, dic) {
+    var answer = 0;
+    
+    for(var i=0; i<dic.length; i++){
+        var chk = 0;
+        for(var j=0; j<spell.length; j++){
+            if(dic[i].indexOf(spell[j]) == -1){
+                answer = 2;
+                chk = -1;
+                break;
+            }
+        }
+        if(chk == 0){
+            answer = 1;
+            break;
+        }
+    }
+
+   
+    
+    return answer;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
