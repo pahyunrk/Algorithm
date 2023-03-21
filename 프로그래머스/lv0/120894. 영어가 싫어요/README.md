@@ -64,5 +64,21 @@
 <li>"onefourzerosixseven"를 숫자로 바꾼 14067를 return합니다.</li>
 </ul>
 
+```javascript
+
+function solution(numbers) {
+    var answer = 0;
+    
+    const num = ["zero", "one", "two", "three", "four", "five", "six", "seven",                   "eight", "nine"];
+    
+    for(var i=0; i< num.length; i++){
+        numbers = numbers.split(num[i]).join(i)
+    }
+    answer = Number(numbers)
+    
+    return answer;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
