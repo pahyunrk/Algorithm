@@ -77,5 +77,18 @@
 <li><code>numlist</code>에서 12의 배수만을 남긴 [120, 600, 12, 12]를 return합니다.</li>
 </ul>
 
+```javascript
+function solution(n, numlist) {
+    var answer = [];
+    
+    for(var i = 0; i < numlist.length; i++) {
+        if(numlist[i] % n === 0) {
+            answer.push(numlist[i]);
+        }
+    }
+    return answer;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
