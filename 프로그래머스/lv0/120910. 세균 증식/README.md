@@ -65,5 +65,17 @@
 <li>처음엔 7마리, 1시간 후엔 14마리, 2시간 후엔 28마리, ..., 15시간 후엔 229376마리가 됩니다. 따라서 229,376을 return합니다.</li>
 </ul>
 
+```javascript
+function solution(n, t) {
+    var answer = n;
+    
+   for(var i=0; i<t; i++){
+       answer *= 2;
+   }
+    
+    return answer;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
