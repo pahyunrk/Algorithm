@@ -72,5 +72,25 @@
 <li>두 수의 곱중 최댓값은 20 * 30 = 600 입니다.</li>
 </ul>
 
+```javascript
+function solution(numbers) {
+    var answer = 0;
+    var maxNum = 0;
+    var minNum = 0;
+    
+    numbers.sort(function(a,b){
+        return a-b;
+    })
+    
+    minNum = numbers[0] * numbers[1];
+    maxNum = numbers[numbers.length-1] * numbers[numbers.length-2]
+    
+    answer = Math.max(minNum, maxNum);
+    
+    return answer;
+}
+
+```
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
