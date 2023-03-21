@@ -71,7 +71,9 @@
 <ul>
 <li>"hello"에서 한 번씩 등장한 문자는 "heo"이고 이를 사전 순으로 정렬한 "eho"를 return 합니다.</li>
 </ul>
+
 ```javascript
+
 function solution(s) {
     var answer = '';
     var arr = [];
