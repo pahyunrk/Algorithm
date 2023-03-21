@@ -80,5 +80,27 @@
 <li>3부터 10까지 2는 한 번도 등장하지 않으므로 0을 return 합니다.</li>
 </ul>
 
+```javascript
+function solution(i, j, k) {
+    var answer = 0;
+    var s='';
+    
+    for(var i; i<=j; i++){
+        s += i;
+    }
+    
+    s.split("");
+    
+    for(var i=0; i<s.length; i++){
+        if(s[i] == k){
+            answer ++;
+        }
+    }
+    
+    return answer;
+}
+
+```
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
