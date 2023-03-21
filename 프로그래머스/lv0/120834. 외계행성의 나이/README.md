@@ -73,5 +73,20 @@
 <li><code>age</code>가 100이므로 "baa"를 return합니다.</li>
 </ul>
 
+```javascript
+function solution(age) {
+    var answer = '';
+    const alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+    var ageArr = String(age).split("");
+    
+    for(var i=0; i<ageArr.length; i++){
+        answer += alpha[ageArr[i]];
+    }
+    
+    
+    return answer;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
