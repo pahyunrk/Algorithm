@@ -72,5 +72,17 @@
 <li>"abcde0"에 있는 숫자 0을 오름차순 정렬한 [0]을 return 합니다.</li>
 </ul>
 
+```javascript
+function solution(my_string) {
+    var answer = [];
+    
+    var num = my_string.replace(/[^0-9]/g,"");
+    answer = num.split("").map(Number);
+    
+    answer.sort();
+    return answer;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
