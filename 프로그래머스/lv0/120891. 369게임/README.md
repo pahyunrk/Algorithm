@@ -61,5 +61,24 @@
 <li>29423은 3이 1개, 9가 1개 있으므로 2를 출력합니다.</li>
 </ul>
 
+```javascript
+
+function solution(order) {
+    var answer = 0;
+    order = String(order);
+    
+    answer= order.match(/[3|6|9]/g);
+    
+    if(answer == null){
+        return 0;
+    }else{
+        return answer.length;
+    }
+    
+    return answer;
+}
+
+```
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
