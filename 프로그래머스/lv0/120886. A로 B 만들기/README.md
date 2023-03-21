@@ -65,5 +65,23 @@
 <li>"allpe"의 순서를 바꿔도 "apple"을 만들 수 없습니다.</li>
 </ul>
 
+```javascript
+function solution(before, after) {
+    var answer = 0;
+    var barr = [];
+    var aarr = [];
+    
+    barr = before.split("").sort();
+    aarr = after.split("").sort();
+    
+    if(String(barr) == String(aarr)){
+        answer = 1;
+    }else{
+        answer = 0;
+    }
+    
+    return answer;
+}
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
