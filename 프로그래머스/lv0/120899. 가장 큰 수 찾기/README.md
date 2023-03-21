@@ -63,5 +63,22 @@
 <li>9, 10, 11, 8 중 가장 큰 수는 11이고 인덱스 2에 있습니다.</li>
 </ul>
 
+```javascript
+
+function solution(array) {
+    var answer = [];
+    var max;
+    var idx;
+    
+    max = Math.max.apply(null,array);
+    idx = array.indexOf(max);
+    
+    answer.push(max,idx);
+    
+    return answer;
+}
+
+```
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
