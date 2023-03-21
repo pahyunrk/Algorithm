@@ -99,5 +99,28 @@
 <li>따라서 7 + 6 = 13을 return합니다.</li>
 </ul>
 
+```javascript
+
+
+function solution(sides) {
+    var answer = 0;
+    var max = 0;
+    var min = 0;
+    
+    max = Math.max.apply(null, sides);
+    min = Math.min.apply(null, sides);
+    
+    // 배열값 중 가장 긴변이 있을 시
+    for(let i = max-min+1; i <= max; i ++) {
+        answer++
+    }
+    // 배열값 중 가장 긴변이 없을 시
+    for(let i = max+1; i < max+min; i ++) {
+        answer++
+    }
+    
+    return answer;
+}
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
