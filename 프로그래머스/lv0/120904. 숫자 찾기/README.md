@@ -77,5 +77,21 @@
 <li>123456에 7은 없으므로 -1을 return 합니다.</li>
 </ul>
 
+```javascript
+function solution(num, k) {
+    var answer = 0;
+    var arr;
+    
+    arr = String(num).split("");
+    
+    answer = arr.indexOf(String(k))
+    
+    if(answer != -1){
+        answer += 1;
+    }
+    
+    return answer;
+}
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
