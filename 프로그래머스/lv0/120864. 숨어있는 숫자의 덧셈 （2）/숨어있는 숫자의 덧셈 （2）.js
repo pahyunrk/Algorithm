@@ -1,7 +1,6 @@
 function solution(my_string) {
     var answer = 0;
     var num;
-    var numarr = [];
     
     num = my_string.match(/[0-9]+/g);
     
