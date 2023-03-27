@@ -46,5 +46,30 @@
 <li>n이 3이므로 첫째 줄에 * 1개, 둘째 줄에 * 2개, 셋째 줄에 * 3개를 출력합니다.</li>
 </ul>
 
+```javascript
+
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+let input = [];
+
+rl.on('line', function (line) {
+    input = line.split(' ');
+}).on('close', function () {
+    
+    var str = ''
+    for(var i = 0 ; i < input[0]; i++) {
+        for(var j = 0 ; j <= i; j++) {
+            str+='*'
+        }
+        str+='\n'
+    }
+    console.log(str)
+});
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
