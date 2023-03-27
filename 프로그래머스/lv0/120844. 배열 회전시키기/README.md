@@ -65,5 +65,20 @@
 <li><code>numbers</code> 가 [4, 455, 6, 4, -1, 45, 6]이고 <code>direction</code>이 "left" 이므로 왼쪽으로 한 칸씩 회전시킨 [455, 6, 4, -1, 45, 6, 4]를 return합니다.</li>
 </ul>
 
+```javascript
+
+function solution(numbers, direction) {
+    var answer = [];
+    
+    if(direction == 'right'){
+        numbers.unshift(numbers.pop());
+    }
+    else if(direction == 'left'){
+        numbers.push(numbers.shift());
+    }
+    return numbers;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
