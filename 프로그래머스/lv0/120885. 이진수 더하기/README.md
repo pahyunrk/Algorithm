@@ -67,5 +67,19 @@
 <li>1001 + 1111 = 11000 이므로 "11000"을 return합니다.</li>
 </ul>
 
+```javascript
+
+function solution(bin1, bin2) {
+    var answer;
+    var num1 = parseInt(bin1,2);
+    var num2 = parseInt(bin2,2);
+    
+    answer = (num1 + num2);
+    answer = answer.toString(2);
+    return answer;
+}
+
+```
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
