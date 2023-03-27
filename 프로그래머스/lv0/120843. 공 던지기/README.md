@@ -87,5 +87,21 @@
 
 <p>※ 공지 - 2023년 1월 25일 테스트 케이스가 추가되었습니다. 기존에 제출한 코드가 통과하지 못할 수도 있습니다.</p>
 
+```javascript
+function solution(numbers, k) {
+    var answer = 0;
+    
+    var idx = 0;
+    
+    while(k > 1){
+        idx += 2
+        idx %= numbers.length;
+        k -= 1
+    }
+    answer = numbers[idx];
+    return answer;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
