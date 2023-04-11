@@ -65,5 +65,23 @@
 <li>공동 2등이 두 명, 공동 4등이 2명 이므로 3등과 5등은 없습니다.</li>
 </ul>
 
+```javascript
+function solution(score) {
+    var answer = [];
+    var answer2 = new Array(score.length).fill(1);
+    
+    for(var i=0; i<score.length; i++){
+        answer.push((parseInt(score[i][0])+parseInt(score[i][1]))/2);
+    }
+    
+   for(var i = 0; i < answer.length; i++){
+        for(var j = 0; j <answer.length; j++){
+            if(answer[i]<answer[j]) answer2[i]++;
+        }
+    }
+    return answer2;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
