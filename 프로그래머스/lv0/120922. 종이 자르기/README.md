@@ -80,5 +80,14 @@
 <li>이미 1 * 1 크기이므로 0을 return 합니다.</li>
 </ul>
 
+```javascript
+function solution(M, N) {
+    var answer = 0;
+    
+    answer = M*N-1;
+    
+    return answer;
+}
 
+```
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
