@@ -102,5 +102,18 @@
 <li>40을 3x 마을의 숫자로 변환하면 76입니다.</li>
 </ul>
 
+```javascript
+function solution(n) {
+    var answer = 0;
+
+    for(var i=0 ; i<n ; i++) {
+        answer++;
+        while(answer.toString().includes('3') || answer%3 == 0) {
+            answer++;
+        }
+    }
+    return answer;
+}
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
