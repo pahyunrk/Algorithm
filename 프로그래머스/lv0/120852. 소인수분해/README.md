@@ -71,5 +71,22 @@ Empty
 <li>420을 소인수분해하면 2 * 2 * 3 * 5 * 7 입니다. 따라서 [2, 3, 5, 7]을 return합니다.</li>
 </ul>
 
+```javascript
+function solution(n) {
+   var answer = [];
+    for(let i =2 ; i<=n ; i++) {
+        while( n % i === 0) {
+            answer.push(i);
+            n = n / i;
+        }
+    }
+
+    answer = answer.filter((item,idx)=>{
+        return answer.indexOf(item) === idx;
+    })
+    return answer;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
