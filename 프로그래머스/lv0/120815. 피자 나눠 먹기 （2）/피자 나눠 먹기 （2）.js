@@ -1,0 +1,10 @@
+function solution(n) {
+    var answer = 6;
+    
+    while(answer%n != 0) {
+        answer += 6
+    } 
+  	answer = answer/6;
+
+    return answer;
+}
