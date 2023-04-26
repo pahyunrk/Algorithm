@@ -69,5 +69,18 @@ Empty
 <li>4명이 모두 같은 양을 먹기 위해 최소 2판을 시키면 피자가 12조각으로 모두 세 조각씩 먹을 수 있습니다.</li>
 </ul>
 
+```javascript
+
+function solution(n) {
+    var answer = 6;
+    
+    while(answer%n != 0) {
+        answer += 6
+    } 
+  	answer = answer/6;
+
+    return answer;
+}
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
