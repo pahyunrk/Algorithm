@@ -88,5 +88,18 @@ Empty
 <li>설명 생략</li>
 </ul>
 
+```javascript
+
+function solution(num, total) {
+    var answer = [];
+    var mid = (total/num) - (num-1)/2;
+    
+    for(var i=0; i < num; i++){
+        answer[i]= mid;
+        mid++;
+    }
+    return answer;
+}
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
