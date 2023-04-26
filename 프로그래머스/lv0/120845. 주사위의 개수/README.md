@@ -69,5 +69,12 @@ Empty
 <li>상자의 크기가 가로 10, 세로 8, 높이 6이므로 모서리의 길이가 3인 주사위는 12개 들어갈 수 있습니다.</li>
 </ul>
 
+```javascript
 
+function solution(box, n) {
+    var answer = 0;
+    answer = Math.floor(box[0]/n) * Math.floor(box[1]/n) * Math.floor(box[2]/n);
+    return answer;
+}
+```
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
