@@ -67,5 +67,21 @@ Empty
 <li>19 - 6 = 13 은 옳은 수식이므로 "O", 5 + 66 = 71 은 옳은 수식이므로 "O", 5 - 15 = 63 은 틀린 수식이므로 "X", 3 - 1 = 2는 옳은 수식이므로 "O" 따라서 ["O", "O", "X", "O"]를 return합니다.</li>
 </ul>
 
+```javascript
+
+function solution(quiz) {
+    var answer = [];
+    
+    quiz.forEach(element =>{
+        var arr = element.split('='); // ['3-4', '-3']
+        if(eval(arr[0]) == eval(arr[1])){
+             answer.push("O");
+        }else {
+             answer.push("X");
+        }
+    });  
+    return answer;
+}
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
