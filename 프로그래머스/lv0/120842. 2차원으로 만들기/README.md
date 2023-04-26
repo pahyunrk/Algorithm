@@ -81,5 +81,22 @@ Empty
 <li><code>num_list</code>가 [100, 95, 2, 4, 5, 6, 18, 33, 948] 로 길이가 9이고 <code>n</code>이 3이므로 3 * 3 배열로 변경한 [[100, 95, 2], [4, 5, 6], [18, 33, 948]] 을 return합니다.</li>
 </ul>
 
+```javascript
+
+function solution(num_list, n) {
+
+    var answer = []
+ 
+    for(var i = 0 ; i < num_list.length; ) {
+        var arr = []
+        for(let j = 0 ; j < n ; j++) {
+            arr.push(num_list[i])
+            i++
+        }
+        answer.push(arr)
+    }
+    return answer;
+}
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
