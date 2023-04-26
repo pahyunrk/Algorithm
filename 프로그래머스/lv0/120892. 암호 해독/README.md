@@ -74,5 +74,14 @@ Empty
 <li>"pfqallllabwaoclk" 의 2번째, 4번째, 6번째, 8번째, 10번째, 12번째, 14번째, 16번째 글자를 합친 "fallback"을 return합니다.</li>
 </ul>
 
+```javascript
 
+function solution(cipher, code) {
+   var answer = '';
+	for (var i = code - 1; i < cipher.length; i += code) {
+    	answer += cipher[i];
+	}
+	return answer;
+}
+```
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
