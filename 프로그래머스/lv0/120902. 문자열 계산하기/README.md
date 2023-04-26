@@ -64,5 +64,20 @@ Empty
 <li>3 + 4 = 7을 return 합니다.</li>
 </ul>
 
+```javascript
+
+function solution(my_string) {
+   var arr = my_string.split(' ')
+   var answer = arr[0] * 1;
+    
+    for(let i = 1; i< arr.length; i++){
+        if(arr[i] == '+')
+            answer += arr[i+1] * 1;
+        else if(arr[i] == '-')
+            answer -= arr[i+1] * 1;
+    }
+    return answer;
+}
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
