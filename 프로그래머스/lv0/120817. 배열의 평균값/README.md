@@ -63,5 +63,16 @@
 <li><code>numbers</code>의 원소들의 평균 값은 94.0입니다.</li>
 </ul>
 
+```javascript
+function solution(numbers) {
+    var answer = 0;
+    for(var i=0; i<numbers.length; i++){
+        answer += numbers[i];
+    }
+    answer = answer / numbers.length;
+    return answer;
+}
+```
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
