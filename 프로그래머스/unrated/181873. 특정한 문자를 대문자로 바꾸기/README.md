@@ -64,5 +64,13 @@ Empty
 <li>예제 2번의 <code>alp</code>는 "x"이고 <code>my_string</code>에 x는 없습니다. 따라서 "lowercase"를 return 합니다.</li>
 </ul>
 
+```javascript
+function solution(my_string, alp) {
+    var answer = '';
+    answer = my_string.replaceAll(alp, alp.toUpperCase());
+    return answer;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
