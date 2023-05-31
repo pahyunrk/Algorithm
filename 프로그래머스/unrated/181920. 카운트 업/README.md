@@ -53,5 +53,15 @@ Empty
 <li>3부터 10까지의 숫자들을 담은 리스트 [3, 4, 5, 6, 7, 8, 9, 10]를 return합니다.</li>
 </ul>
 
+```javascript
+function solution(start, end) {
+    var answer = [];
+    for(var i=start; i<=end; i++){
+        answer.push(i);
+    }
+    return answer;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
