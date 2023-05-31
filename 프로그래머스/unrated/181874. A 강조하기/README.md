@@ -68,5 +68,15 @@ Empty
 <li>따라서 "progrAmmers"를 return 합니다.</li>
 </ul>
 
+```javascript
+
+function solution(myString) {
+    var answer = '';
+    answer = myString.toLowerCase().replaceAll("a", "A");
+    return answer;
+}
+
+```
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
