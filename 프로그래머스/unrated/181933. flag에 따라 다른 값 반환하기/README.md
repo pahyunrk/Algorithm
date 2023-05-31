@@ -67,5 +67,14 @@ Empty
 <li>예제 2번에서 <code>flag</code>가 false이므로 <code>a</code> - <code>b</code> = (-4) - 7 = -11을 return 합니다.</li>
 </ul>
 
+```javascript
+function solution(a, b, flag) {
+    var answer = 0;
+    if(flag) answer = a+b;
+    else answer = a-b;
+    return answer;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
