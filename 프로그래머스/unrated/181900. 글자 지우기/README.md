@@ -105,5 +105,22 @@ Empty
 <p><code>indices</code>에 있는 인덱스의 글자들을 지우고 이어붙이면 "programmers"가 되므로 이를 return 합니다.</p></li>
 </ul>
 
+```javascript
+function solution(my_string, indices) {
+    var answer = [];
+    var arr = Array.from(my_string);
+    var result = "";
+    
+    arr.map(function(v,i){
+       if(!indices.includes(i)){
+           answer.push(v);
+       }
+    })
+    
+    result = answer.join("");
+    return result;
+}
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
