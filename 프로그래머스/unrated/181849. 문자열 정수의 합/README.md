@@ -61,5 +61,21 @@ Empty
 <li>문자열 안의 모든 숫자를 더하면 1이 됩니다.</li>
 </ul>
 
+```javascript
+function solution(num_str) {
+    var answer = 0;
+    
+    var arr = num_str.split("");
+    
+    arr.map((v)=>{
+        answer += Number(v);
+        
+    })
+    
+    return answer;
+}
+
+
+```
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
