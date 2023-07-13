@@ -1,0 +1,16 @@
+```javascript
+function solution(date1, date2) {
+    var answer = 0;
+
+    var test1 = new Date(date1);
+    var test2 = new Date(date2);
+    
+    if(test1 >= test2){
+        answer = 0;
+        
+    }else{
+        answer = 1;
+    }
+    return answer;
+}
+```
